@@ -42,7 +42,11 @@ $kd=$data['kode_tempat'];
                         <div class="detail-wrapper">
                             <div class="detail-wrapper-body">
                                 <div class="listing-title-bar">
-                                    <h3><?php echo $data['nama_tempat'] ?> <span class="mrg-l-5 category-tag"><?php echo $data['nama_kategori'] ?></span></h3>
+                                    <h3><?php echo $data['nama_tempat'] ?> 
+                                        <span class="mrg-l-5 category-tag"><?php echo $data['nama_kategori'] ?></span>
+                                    <br>
+                                        <a href="https://wa.me/+62089693518338?text=Saya%20tertarik%20dengan%20mobil%20Anda%20yang%20dijual" target="_blank">089693518338</a>
+                                    </h3>
                                     <div class="mt-3">
                                         <a href="#listing-location" class="listing-address">
                                             <i class="fa fa-map-marker pr-2 ti-location-pin mrg-r-5"></i> <?php echo $data['alamat_tempat'] ?>
