@@ -171,9 +171,9 @@ google.maps.event.addListener(alamatAutocomlete, 'place_changed', function() {
                             </li>
                             <li>
                                 <span>
-                                    <i class="material-icons">lock</i> Password
+                                    <i class="material-icons">lock</i> No HP
                                 </span>
-                                <p><?php echo $pass; ?></p>
+                                <p><?php echo $no_hp; ?></p>
                             </li>
                         </ul>
                     </div>
