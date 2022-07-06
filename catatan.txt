@@ -1,0 +1,1 @@
+ALTER TABLE `tempat` ADD `no_hp` VARCHAR(255) NULL AFTER `nama_tempat`;
