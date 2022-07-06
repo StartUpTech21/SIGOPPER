@@ -1,0 +1,866 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="html 5 template">
+	<meta name="author" content="">
+	<title>Listings Map</title>
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Asap:400,400i%7CMontserrat:600,800" rel="stylesheet">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- LEAFLET MAP -->
+	<link rel="stylesheet" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/leaflet-gesture-handling.min.css">
+	<link rel="stylesheet" href="css/leaflet.markercluster.css">
+	<link rel="stylesheet" href="css/leaflet.markercluster.default.css">
+	<!-- ARCHIVES CSS -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/lightcase.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/maps.css">
+	<link rel="stylesheet" id="color" href="css/default.css">
+</head>
+
+<body class="inner-pages">
+	<!-- START SECTION HEADINGS -->
+	<div class="header head-2">
+		<div class="header-top head-2 hidden-sm-down">
+			<div class="container">
+				<div class="top-info hidden-sm-down">
+					<div class="call-header">
+						<p><i class="fa fa-phone" aria-hidden="true"></i> (234) 0200 17813</p>
+					</div>
+					<div class="address-header">
+						<p><i class="fa fa-map-marker" aria-hidden="true"></i> 95 South Park Ave, USA</p>
+					</div>
+					<div class="mail-header">
+						<p><i class="fa fa-envelope" aria-hidden="true"></i> info@listingo.com</p>
+					</div>
+				</div>
+				<div class="top-social hidden-sm-down">
+					<div class="login-wrap">
+						<ul class="d-flex">
+							<li><a href="login.html"><i class="fa fa-user"></i> Login</a></li>
+							<li><a href="register.html"><i class="fa fa-sign-in"></i> Register</a></li>
+						</ul>
+					</div>
+					<div class="social-icons-header">
+						<div class="social-icons">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="btn-dropdown dropdown-toggle" type="button" id="dropdownlang" data-toggle="dropdown" aria-haspopup="true">
+							<img src="images/en.png" alt="lang" /> English
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownlang">
+							<li><img src="images/fr.png" alt="lang" />France</li>
+							<li><img src="images/de.png" alt="lang" /> German</li>
+							<li><img src="images/it.png" alt="lang" />Italy</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom heading sticky-header head-2" id="heading">
+			<div class="container">
+				<a href="index.html" class="logo">
+					<img src="images/logo.svg" alt="realhome">
+				</a>
+				<button type="button" class="search-button" data-toggle="collapse" data-target="#bloq-search" aria-expanded="false">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
+				<div class="get-quote hidden-lg-down">
+					<a href="add-listing.html">
+						<p>Add Listing</p>
+					</a>
+				</div>
+				<button type="button" class="button-menu hidden-lg-up" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+
+				<form action="#" id="bloq-search" class="collapse">
+					<div class="bloq-search">
+						<input type="text" placeholder="search...">
+						<input type="submit" value="Search">
+					</div>
+				</form>
+
+				<nav id="main-menu" class="collapse">
+					<ul>
+						<!-- STAR COLLAPSE MOBILE MENU -->
+						<li class="hidden-lg-up">
+							<div class="po">
+								<a data-toggle="collapse" href="#home" aria-expanded="false">Home</a>
+							</div>
+							<div class="collapse" id="home">
+								<div class="card card-block">
+									<a class="dropdown-item" href="index.html">Home 1</a>
+									<a class="dropdown-item" href="index-2.html">Home 2</a>
+									<a class="dropdown-item" href="index-3.html">Home 3</a>
+									<a class="dropdown-item" href="index-4.html">Home 4</a>
+								</div>
+							</div>
+						</li>
+						<!-- END COLLAPSE MOBILE MENU -->
+						<li class="dropdown hidden-md-down">
+							<a class="active dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Home</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="index.html">Home 1</a>
+								<a class="dropdown-item" href="index-2.html">Home 2</a>
+								<a class="dropdown-item" href="index-3.html">Home 3</a>
+								<a class="dropdown-item" href="index-4.html">Home 4</a>
+							</div>
+						</li>
+						<!-- STAR COLLAPSE MOBILE MENU -->
+						<li class="hidden-lg-up">
+							<div class="po">
+								<a data-toggle="collapse" href="#listing" aria-expanded="false">Listings</a>
+							</div>
+							<div class="collapse" id="listing">
+								<div class="card card-block">
+									<a class="dropdown-item" href="listings-full-list.html">Listing Full List</a>
+									<a class="dropdown-item" href="listings-list-right-sidebar.html">List Right Sidebar </a>
+									<a class="dropdown-item" href="listings-full-grid.html">Listing Full Grid</a>
+									<a class="dropdown-item" href="listings-grid-right-sidebar.html">Grid Right Sidebar</a>
+									<a class="dropdown-item" href="listings-half-map.html">Listing Half Map</a>
+									<a class="dropdown-item" href="listings-map.html">Listing Full Map</a>
+									<a class="dropdown-item" href="listing-details.html">Listing Details</a>
+								</div>
+							</div>
+						</li>
+						<!-- END COLLAPSE MOBILE MENU -->
+						<li class="dropdown hidden-md-down">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Listings</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="listings-full-list.html">Listing Full List</a>
+								<a class="dropdown-item" href="listings-list-right-sidebar.html">List Right Sidebar </a>
+								<a class="dropdown-item" href="listings-full-grid.html">Listing Full Grid</a>
+								<a class="dropdown-item" href="listings-grid-right-sidebar.html">Grid Right Sidebar</a>
+								<a class="dropdown-item" href="listings-half-map.html">Listing Half Map</a>
+								<a class="dropdown-item" href="listings-map.html">Listing Full Map</a>
+								<a class="dropdown-item" href="listing-details.html">Listing Details</a>
+							</div>
+						</li>
+						<!-- STAR COLLAPSE MOBILE MENU -->
+						<li class="hidden-lg-up">
+							<div class="po">
+								<a data-toggle="collapse" href="#about" aria-expanded="false">Pages</a>
+							</div>
+							<div class="collapse" id="about">
+								<div class="card card-block">
+									<a class="dropdown-item" href="about.html">About Us</a>
+									<a class="dropdown-item" href="dashboard.html">Dashboard</a>
+									<a class="dropdown-item" href="faq.html">Faq</a>
+									<a class="dropdown-item" href="pricing-table.html">Pricing</a>
+									<a class="dropdown-item" href="payment-method.html">Payment Method</a>
+									<a class="dropdown-item" href="thank-you.html">Thank You</a>
+									<a class="dropdown-item" href="404.html">404</a>
+									<a class="dropdown-item" href="login.html">Login</a>
+									<a class="dropdown-item" href="register.html">Register</a>
+									<a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+									<a class="dropdown-item" href="under-construction.html">Under Construction</a>
+								</div>
+							</div>
+						</li>
+						<!-- END COLLAPSE MOBILE MENU -->
+						<li class="dropdown hidden-md-down">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Pages</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="about.html">About Us</a>
+								<a class="dropdown-item" href="dashboard.html">Dashboard</a>
+								<a class="dropdown-item" href="faq.html">Faq</a>
+								<a class="dropdown-item" href="pricing-table.html">Pricing</a>
+								<a class="dropdown-item" href="payment-method.html">Payment Method</a>
+								<a class="dropdown-item" href="thank-you.html">Thank You</a>
+								<a class="dropdown-item" href="404.html">404</a>
+								<a class="dropdown-item" href="login.html">Login</a>
+								<a class="dropdown-item" href="register.html">Register</a>
+								<a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+								<a class="dropdown-item" href="under-construction.html">Under Construction</a>
+							</div>
+						</li>
+						<!-- STAR COLLAPSE MOBILE MENU -->
+						<li class="hidden-lg-up">
+							<div class="po">
+								<a data-toggle="collapse" href="#blog" aria-expanded="false">Blog</a>
+							</div>
+							<div class="collapse" id="blog">
+								<div class="card card-block">
+									<a class="dropdown-item" href="blog-grid.html">Blog Grid</a>
+									<a class="dropdown-item" href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
+									<a class="dropdown-item" href="blog-list.html">Blog List</a>
+									<a class="dropdown-item" href="blog-list-sidebar.html">Blog List Sidebar</a>
+									<a class="dropdown-item" href="blog-details.html">Blog Details</a>
+								</div>
+							</div>
+						</li>
+						<!-- END COLLAPSE MOBILE MENU -->
+						<li class="dropdown hidden-md-down">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Blog</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="blog-grid.html">Blog Grid</a>
+								<a class="dropdown-item" href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
+								<a class="dropdown-item" href="blog-list.html">Blog List</a>
+								<a class="dropdown-item" href="blog-list-sidebar.html">Blog List Sidebar</a>
+								<a class="dropdown-item" href="blog-details.html">Blog Details</a>
+							</div>
+						</li>
+						<li><a href="contact-us.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="header-map google-maps listings">
+		<div id="map-leaflet"></div>
+	</div>
+	<!-- END SECTION HEADINGS -->
+
+	<!-- START SECTION LISTINGS -->
+	<section class="listings-grid google-full-map featured popular portfolio blog">
+		<div class="container">
+			<!-- Block heading Start-->
+			<div class="block-heading">
+				<div class="row">
+					<div class="col-lg-6 col-md-5 col-2">
+						<h4>
+                            <span class="heading-icon">
+                                <i class="fa fa-th-list"></i>
+                                </span>
+                                <span class="hidden-sm-down">Properties Listing</span>
+                            </h4>
+					</div>
+					<div class="col-lg-6 col-md-7 col-10 cod-pad mt-22">
+						<div class="sorting-options">
+							<select class="sorting">
+								<option>Price: High to low</option>
+								<option>Price: Low to high</option>
+								<option>Sells: High to low</option>
+								<option>Sells: Low to high</option>
+							</select>
+							<a href="listings-map.html" class="change-view-btn lde"><i class="fa fa-th-list"></i></a>
+							<a href="listings-map.html" class="change-view-btn active-view-btn"><i class="fa fa-th-large"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Block heading end -->
+			<div class="row featured portfolio-items">
+				<div class="item col-lg-4 col-md-6 col-xs-12 landscapes sale">
+					<div class="project-single">
+						<div class="project-inner project-head">
+							<div class="homes">
+								<!-- homes img -->
+								<a href="listing-details.html" class="homes-img hover-effect">
+									<div class="homes-tag button alt featured">Restaurants</div>
+									<div class="homes-tag button sale rent"><i class="fa fa-heart-o"></i>
+										<p>163</p>
+									</div>
+									<div class="homes-price">
+										<ul class="starts text-left mb-0">
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="ml-3">(6 Reviews)</li>
+										</ul>
+									</div>
+									<img src="images/popular-listings/1.jpeg" alt="home-1" class="img-responsive">
+									<div class="overlay"></div>
+								</a>
+							</div>
+						</div>
+						<!-- homes content -->
+						<div class="homes-content">
+							<!-- homes address -->
+							<a href="listing-details.html"><h3>Luxury Restaurant</h3></a>
+							<p class="homes-address">
+								<a href="listing-details.html">
+									<i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item col-lg-4 col-md-6 col-xs-12 people rent">
+					<div class="project-single">
+						<div class="project-inner project-head">
+							<div class="homes">
+								<!-- homes img -->
+								<a href="listing-details.html" class="homes-img hover-effect">
+									<div class="homes-tag button alt featured">Gym</div>
+									<div class="homes-tag button sale rent"><i class="fa fa-heart-o"></i>
+										<p>202</p>
+									</div>
+									<div class="homes-price">
+										<ul class="starts text-left mb-0">
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star-half"></i>
+											</li>
+											<li class="ml-3">(6 Reviews)</li>
+										</ul>
+									</div>
+									<img src="images/popular-listings/2.jpeg" alt="home-1" class="img-responsive">
+									<div class="overlay"></div>
+								</a>
+							</div>
+						</div>
+						<!-- homes content -->
+						<div class="homes-content">
+							<!-- homes address -->
+							<a href="listing-details.html"><h3>Gym in Town</h3></a>
+							<p class="homes-address">
+								<a href="listing-details.html">
+									<i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item col-lg-4 col-md-6 col-xs-12 people landscapes sale">
+					<div class="project-single">
+						<div class="project-inner project-head">
+							<div class="homes">
+								<!-- homes img -->
+								<a href="listing-details.html" class="homes-img hover-effect">
+									<div class="homes-tag button alt featured">Cafe</div>
+									<div class="homes-tag button sale rent"><i class="fa fa-heart-o"></i>
+										<p>412</p>
+									</div>
+									<div class="homes-price">
+										<ul class="starts text-left mb-0">
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="ml-3">(6 Reviews)</li>
+										</ul>
+									</div>
+									<img src="images/popular-listings/3.jpeg" alt="home-1" class="img-responsive">
+									<div class="overlay"></div>
+								</a>
+							</div>
+						</div>
+						<!-- homes content -->
+						<div class="homes-content">
+							<!-- homes address -->
+							<a href="listing-details.html"><h3>Cafe in Boston</h3></a>
+							<p class="homes-address">
+								<a href="listing-details.html">
+									<i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item col-lg-4 col-md-6 col-xs-12 people landscapes rent">
+					<div class="project-single">
+						<div class="project-inner project-head">
+							<div class="homes">
+								<!-- homes img -->
+								<a href="listing-details.html" class="homes-img hover-effect">
+									<div class="homes-tag button alt featured">Cars</div>
+									<div class="homes-tag button sale rent"><i class="fa fa-heart-o"></i>
+										<p>675</p>
+									</div>
+									<div class="homes-price">
+										<ul class="starts text-left mb-0">
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star-half"></i>
+											</li>
+											<li class="ml-3">(6 Reviews)</li>
+										</ul>
+									</div>
+									<img src="images/popular-listings/4.jpg" alt="home-1" class="img-responsive">
+									<div class="overlay"></div>
+								</a>
+							</div>
+						</div>
+						<!-- homes content -->
+						<div class="homes-content">
+							<!-- homes address -->
+							<a href="listing-details.html"><h3>Car Dealer in New York</h3></a>
+							<p class="homes-address">
+								<a href="listing-details.html">
+									<i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item col-lg-4 col-md-6 col-xs-12 people sale">
+					<div class="project-single">
+						<div class="project-inner project-head">
+							<div class="homes">
+								<!-- homes img -->
+								<a href="listing-details.html" class="homes-img hover-effect">
+									<div class="homes-tag button alt featured">Real Estate</div>
+									<div class="homes-tag button sale rent"><i class="fa fa-heart-o"></i>
+										<p>362</p>
+									</div>
+									<div class="homes-price">
+										<ul class="starts text-left mb-0">
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="ml-3">(6 Reviews)</li>
+										</ul>
+									</div>
+									<img src="images/popular-listings/8.jpg" alt="home-1" class="img-responsive">
+									<div class="overlay"></div>
+								</a>
+							</div>
+						</div>
+						<!-- homes content -->
+						<div class="homes-content">
+							<!-- homes address -->
+							<a href="listing-details.html"><h3>Real Estate in San Francisco</h3></a>
+							<p class="homes-address">
+								<a href="listing-details.html">
+									<i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item col-lg-4 col-md-6 it2 col-xs-12 web rent">
+					<div class="project-single">
+						<div class="project-inner project-head">
+							<div class="homes">
+								<!-- homes img -->
+								<a href="listing-details.html" class="homes-img hover-effect">
+									<div class="homes-tag button alt featured">Movies</div>
+									<div class="homes-tag button sale rent"><i class="fa fa-heart-o"></i>
+										<p>247</p>
+									</div>
+									<div class="homes-price">
+										<ul class="starts text-left mb-0">
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star-half"></i>
+											</li>
+											<li class="ml-3">(6 Reviews)</li>
+										</ul>
+									</div>
+									<img src="images/popular-listings/9.jpeg" alt="home-1" class="img-responsive">
+									<div class="overlay"></div>
+								</a>
+							</div>
+						</div>
+						<!-- homes content -->
+						<div class="homes-content">
+							<!-- homes address -->
+							<a href="listing-details.html"><h3>Movie Theater in Toronto</h3></a>
+							<p class="homes-address">
+								<a href="listing-details.html">
+									<i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item col-lg-4 col-md-6 col-xs-12 landscapes sale">
+					<div class="project-single">
+						<div class="project-inner project-head">
+							<div class="homes">
+								<!-- homes img -->
+								<a href="listing-details.html" class="homes-img hover-effect">
+									<div class="homes-tag button alt featured">Market</div>
+									<div class="homes-tag button sale rent"><i class="fa fa-heart-o"></i>
+										<p>175</p>
+									</div>
+									<div class="homes-price">
+										<ul class="starts text-left mb-0">
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="ml-3">(6 Reviews)</li>
+										</ul>
+									</div>
+									<img src="images/popular-listings/10.jpeg" alt="home-1" class="img-responsive">
+									<div class="overlay"></div>
+								</a>
+							</div>
+						</div>
+						<!-- homes content -->
+						<div class="homes-content">
+							<!-- homes address -->
+							<a href="listing-details.html"><h3>Super Market in Chicago</h3></a>
+							<p class="homes-address">
+								<a href="listing-details.html">
+									<i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item col-lg-4 col-md-6 col-xs-12 people rent">
+					<div class="project-single">
+						<div class="project-inner project-head">
+							<div class="homes">
+								<!-- homes img -->
+								<a href="listing-details.html" class="homes-img hover-effect">
+									<div class="homes-tag button alt featured">Bank</div>
+									<div class="homes-tag button sale rent"><i class="fa fa-heart-o"></i>
+										<p>675</p>
+									</div>
+									<div class="homes-price">
+										<ul class="starts text-left mb-0">
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star-half"></i>
+											</li>
+											<li class="ml-3">(6 Reviews)</li>
+										</ul>
+									</div>
+									<img src="images/popular-listings/11.jpeg" alt="home-1" class="img-responsive">
+									<div class="overlay"></div>
+								</a>
+							</div>
+						</div>
+						<!-- homes content -->
+						<div class="homes-content">
+							<!-- homes address -->
+							<a href="listing-details.html"><h3>Bank in Houston</h3></a>
+							<p class="homes-address">
+								<a href="listing-details.html">
+									<i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item col-lg-4 col-md-6 col-xs-12 people landscapes sale">
+					<div class="project-single no-mb">
+						<div class="project-inner project-head">
+							<div class="homes">
+								<!-- homes img -->
+								<a href="listing-details.html" class="homes-img hover-effect">
+									<div class="homes-tag button alt featured">Hospital</div>
+									<div class="homes-tag button sale rent"><i class="fa fa-heart-o"></i>
+										<p>243</p>
+									</div>
+									<div class="homes-price">
+										<ul class="starts text-left mb-0">
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="mb-0"><i class="fa fa-star"></i>
+											</li>
+											<li class="ml-3">(6 Reviews)</li>
+										</ul>
+									</div>
+									<img src="images/popular-listings/12.jpeg" alt="home-1" class="img-responsive">
+									<div class="overlay"></div>
+								</a>
+							</div>
+						</div>
+						<!-- homes content -->
+						<div class="homes-content">
+							<!-- homes address -->
+							<a href="listing-details.html"><h3>Hospital in Los Angeles</h3></a>
+							<p class="homes-address">
+								<a href="listing-details.html">
+									<i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav aria-label="..." class="pt-2">
+				<ul class="pagination mt-0">
+					<li class="page-item disabled">
+						<a class="page-link" href="#" tabindex="-1">Previous</a>
+					</li>
+					<li class="page-item active">
+						<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">5</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<!-- END SECTION LISTINGS -->
+
+	<!-- START FOOTER -->
+	<footer class="first-footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="netabout">
+							<a href="index.html" class="logo">
+								<img src="images/logo.svg" alt="netcom">
+							</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p>
+						</div>
+						<div class="contactus">
+							<ul>
+								<li>
+									<div class="info">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<p class="in-p">95 South Park Avenue, USA</p>
+									</div>
+								</li>
+								<li>
+									<div class="info">
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<p class="in-p">+456 875 369 208</p>
+									</div>
+								</li>
+								<li>
+									<div class="info">
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+										<p class="in-p ti">support@listingo.com</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="widget quick-link clearfix">
+							<h3 class="widget-title">Quick Links</h3>
+							<div class="quick-links">
+								<ul class="one-half mr-5">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="our-team.html">Our Team</a></li>
+									<li><a href="project.html">Projects</a></li>
+									<li class="no-pb"><a href="blog-list.html">Blog List</a></li>
+								</ul>
+								<ul class="one-half">
+									<li><a href="blog-grid.html">Blog</a></li>
+									<li><a href="pricing-table.html">Pricing</a></li>
+									<li><a href="contact-us.html">Contact</a></li>
+									<li><a href="#">Support</a></li>
+									<li><a href="faq.html">Our Faq</a></li>
+									<li class="no-pb"><a href="project-single.html">Project</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="widget">
+							<h3>Instagram</h3>
+							<ul class="photo">
+								<li class="hover-effect">
+									<figure>
+										<a href="#"><img src="images/instagram/inst-1.jpeg" alt=""></a>
+									</figure>
+								</li>
+								<li class="hover-effect">
+									<figure>
+										<a href="#"><img src="images/instagram/inst-2.jpeg" alt=""></a>
+									</figure>
+								</li>
+								<li class="hover-effect">
+									<figure>
+										<a href="#"><img src="images/instagram/inst-3.jpeg" alt=""></a>
+									</figure>
+								</li>
+								<li class="hover-effect">
+									<figure>
+										<a href="#"><img src="images/instagram/inst-4.jpeg" alt=""></a>
+									</figure>
+								</li>
+								<li class="hover-effect">
+									<figure>
+										<a href="#"><img src="images/instagram/inst-5.jpg" alt=""></a>
+									</figure>
+								</li>
+								<li class="hover-effect">
+									<figure>
+										<a href="#"><img src="images/instagram/inst-6.jpeg" alt=""></a>
+									</figure>
+								</li>
+								<li class="hover-effect">
+									<figure>
+										<a href="#"><img src="images/instagram/inst-7.jpeg" alt=""></a>
+									</figure>
+								</li>
+								<li class="hover-effect">
+									<figure>
+										<a href="#"><img src="images/instagram/inst-8.jpg" alt=""></a>
+									</figure>
+								</li>
+								<li class="hover-effect">
+									<figure>
+										<a href="#"><img src="images/instagram/inst-9.jpeg" alt=""></a>
+									</figure>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="newsletters">
+							<h3>Newsletters</h3>
+							<p>Sign Up for Our Newsletter to get Latest Updates and Offers. Subscribe to receive news in your inbox.</p>
+						</div>
+						<form class="bloq-email mailchimp form-inline" method="post">
+							<label for="subscribeEmail" class="error"></label>
+							<div class="email">
+								<input type="email" id="subscribeEmail" name="EMAIL" placeholder="Enter Your Email">
+								<input type="submit" value="Subscribe">
+								<p class="subscription-success"></p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="second-footer">
+			<div class="container">
+				<p>Copyright. ©2020 Sigopper. </p>
+				<!-- <ul class="netsocials">
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+				</ul> -->
+			</div>
+		</div>
+	</footer>
+
+	<a data-scroll href="#heading" class="go-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+	<!-- END FOOTER -->
+	
+	<!--Style Switcher===========================================-->
+	<div class="color-switcher" id="choose_color"> <a href="#." class="picker_close"><i class="fa fa-cog fa-spin fa-2x" ></i></a>
+		<div class="theme-colours">
+			<p class="font-italic">Choose Colour style</p>
+			<ul>
+				<li>
+					<a href="#." class="blue" id="blue"></a>
+				</li>
+				<li>
+					<a href="#." class="pink" id="pink"></a>
+				</li>
+				<li>
+					<a href="#." class="orange" id="orange"></a>
+				</li>
+				<li>
+					<a href="#." class="purple" id="purple"></a>
+				</li>
+				<li>
+					<a href="#." class="green" id="green"></a>
+				</li>
+				<li>
+					<a href="#." class="red" id="red"></a>
+				</li>
+				<li>
+					<a href="#." class="cyan" id="cyan"></a>
+				</li>
+				<li>
+					<a href="#." class="sky-blue" id="sky-blue"></a>
+				</li>
+				<li>
+					<a href="#." class="gray" id="gray"></a>
+				</li>
+				<li>
+					<a href="#." class="brown" id="brown"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- ARCHIVES JS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
+	<script src="js/lightcase.js"></script>
+	<script src="js/light.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/ajaxchimp.min.js"></script>
+	<script src="js/newsletter.js"></script>
+	<script src="js/leaflet.js"></script>
+	<script src="js/leaflet-gesture-handling.min.js"></script>
+	<script src="js/leaflet-providers.js"></script>
+	<script src="js/leaflet.markercluster.js"></script>
+	<script src="js/map4.js"></script>
+	<script src="js/inner.js"></script>
+	<script src="js/color-switcher.js"></script>
+</body>
+
+</html>

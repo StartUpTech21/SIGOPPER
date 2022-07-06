@@ -1,0 +1,1 @@
+?page=tempat/index" class="item <?php if ($_GET['page'] == 'tempat/index' || $_GET['page'] == 'tempat/add' || $_GET['page'] == 'tempat/view' || $_GET['page'] == 'tempat/update') {echo 'active';} ?>

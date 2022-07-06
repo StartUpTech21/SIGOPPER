@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER || SIG</title>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1MgLuZuyqR_OGY3ob3M52N46TDBRI_9k&libraries=places"></script>
+    <link href="../assets/plugins/font/font.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/ckeditor.css" rel="stylesheet">
+    <link href="../assets/css/user-dashboard.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="#" class="brand">PASAR RANGE SENTAP</a>
+    <a href="#" class="btn-nav-logout">
+        <i class="material-icons">power_settings_new</i>
+        <span>Logout</span>
+    </a>
+</nav>
+
+<section class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-block">
+                    <h2>SELAMAT DATANG</h2>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateProfile">
+                        Update Profil
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-list-content">
+                        <ul class="card-list">
+                            <span class="status">Moderen</span>
+                            <li>
+                                <span class="title">Pasar rangge sentap</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <i class="material-icons">update</i> Alamat
+                                </span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </li>
+                            <li>
+                                <span>
+                                    <i class="material-icons">update</i> Deskripsi
+                                </span>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, repellat soluta deserunt harum enim quis officiis sunt vel! Nesciunt recusandae et aut quia hic eveniet rem, vel autem earum fuga?</p>
+                            </li>
+                            <li>
+                                <span>
+                                    <i class="material-icons">person</i> Username
+                                </span>
+                                <p></p>
+                            </li>
+                            <li>
+                                <span>
+                                    <i class="material-icons">lock</i> Password
+                                </span>
+                                <p></p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div id="map_user" style="width: 100%;height: 350px;"></div>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-block mt-5">
+                        <h2>Galeri</h2>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Tambah Galeri
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../assets/image/slide1.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <div class="card-btn">
+                            <a href="#" class="btn btn-primary">UPDATE</a>
+                            <a href="#" class="btn btn-danger">DELETE</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="UpdateProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Summernote -->
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
+    <script src="../assets/plugins/materialize/jquery.min.js"></script>
+    <script src="../assets/plugins/materialize/materialize.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/plugins/dataTable/jquery.dataTables.js"></script>
+    <script src="../assets/plugins/dataTable/dataTables.bootstrap.js"></script>
+    
+    <script src="../assets/js/user-dashboard.js"></script>
+    <script src="../assets/js/add-map.js"></script>
+    <script>
+        var textarea = document.getElementById('textarea1');
+        CKEDITOR.replace(textarea);
+
+        // $.getJSON('data.php', function(i, $myJSON){
+        //     alert(i);
+        // });
+    </script>
+</body>
+</html>
+
+
+

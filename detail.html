@@ -1,0 +1,954 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="html 5 template">
+    <meta name="author" content="">
+    <title>Listing Details</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i%7CMontserrat:600,800" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- LEAFLET MAP -->
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/leaflet-gesture-handling.min.css">
+    <link rel="stylesheet" href="css/leaflet.markercluster.css">
+    <link rel="stylesheet" href="css/leaflet.markercluster.default.css">
+    <!-- ARCHIVES CSS -->
+    <link rel="stylesheet" href="css/timedropper.css">
+    <link rel="stylesheet" href="css/datedropper.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/maps.css">
+    <link rel="stylesheet" id="color" href="css/default.css">
+</head>
+
+<body class="inner-pages">
+    <!-- START SECTION HEADINGS -->
+    <div class="header head-2">
+        <div class="header-top head-2 hidden-sm-down">
+            <div class="container">
+                <div class="top-info hidden-sm-down">
+                    <div class="call-header">
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> (234) 0200 17813</p>
+                    </div>
+                    <div class="address-header">
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> 95 South Park Ave, USA</p>
+                    </div>
+                    <div class="mail-header">
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> info@listingo.com</p>
+                    </div>
+                </div>
+                <div class="top-social hidden-sm-down">
+                    <div class="login-wrap">
+                        <ul class="d-flex">
+                            <li><a href="login.html"><i class="fa fa-user"></i> Login</a></li>
+                            <li><a href="register.html"><i class="fa fa-sign-in"></i> Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-icons-header">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownlang" data-toggle="dropdown" aria-haspopup="true">
+                            <img src="images/en.png" alt="lang" /> English
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownlang">
+                            <li><img src="images/fr.png" alt="lang" />France</li>
+                            <li><img src="images/de.png" alt="lang" /> German</li>
+                            <li><img src="images/it.png" alt="lang" />Italy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom heading sticky-header head-2" id="heading">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="realhome">
+                </a>
+                <button type="button" class="search-button" data-toggle="collapse" data-target="#bloq-search" aria-expanded="false">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <div class="get-quote hidden-lg-down">
+                    <a href="add-listing.html">
+                        <p>Add Listing</p>
+                    </a>
+                </div>
+                <button type="button" class="button-menu hidden-lg-up" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <form action="#" id="bloq-search" class="collapse">
+                    <div class="bloq-search">
+                        <input type="text" placeholder="search...">
+                        <input type="submit" value="Search">
+                    </div>
+                </form>
+
+                <nav id="main-menu" class="collapse">
+                    <ul>
+                        <!-- STAR COLLAPSE MOBILE MENU -->
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                <a data-toggle="collapse" href="#home" aria-expanded="false">Home</a>
+                            </div>
+                            <div class="collapse" id="home">
+                                <div class="card card-block">
+                                    <a class="dropdown-item" href="index.html">Home 1</a>
+                                    <a class="dropdown-item" href="index-2.html">Home 2</a>
+                                    <a class="dropdown-item" href="index-3.html">Home 3</a>
+                                    <a class="dropdown-item" href="index-4.html">Home 4</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END COLLAPSE MOBILE MENU -->
+                        <li class="dropdown hidden-md-down">
+                            <a class="active dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Home</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="index.html">Home 1</a>
+                                <a class="dropdown-item" href="index-2.html">Home 2</a>
+                                <a class="dropdown-item" href="index-3.html">Home 3</a>
+                                <a class="dropdown-item" href="index-4.html">Home 4</a>
+                            </div>
+                        </li>
+                        <!-- STAR COLLAPSE MOBILE MENU -->
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                <a data-toggle="collapse" href="#listing" aria-expanded="false">Listings</a>
+                            </div>
+                            <div class="collapse" id="listing">
+                                <div class="card card-block">
+                                    <a class="dropdown-item" href="listings-full-list.html">Listing Full List</a>
+                                    <a class="dropdown-item" href="listings-list-right-sidebar.html">List Right Sidebar </a>
+                                    <a class="dropdown-item" href="listings-full-grid.html">Listing Full Grid</a>
+                                    <a class="dropdown-item" href="listings-grid-right-sidebar.html">Grid Right Sidebar</a>
+                                    <a class="dropdown-item" href="listings-half-map.html">Listing Half Map</a>
+                                    <a class="dropdown-item" href="listings-map.html">Listing Full Map</a>
+                                    <a class="dropdown-item" href="listing-details.html">Listing Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END COLLAPSE MOBILE MENU -->
+                        <li class="dropdown hidden-md-down">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Listings</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="listings-full-list.html">Listing Full List</a>
+                                <a class="dropdown-item" href="listings-list-right-sidebar.html">List Right Sidebar </a>
+                                <a class="dropdown-item" href="listings-full-grid.html">Listing Full Grid</a>
+                                <a class="dropdown-item" href="listings-grid-right-sidebar.html">Grid Right Sidebar</a>
+                                <a class="dropdown-item" href="listings-half-map.html">Listing Half Map</a>
+                                <a class="dropdown-item" href="listings-map.html">Listing Full Map</a>
+                                <a class="dropdown-item" href="listing-details.html">Listing Details</a>
+                            </div>
+                        </li>
+                        <!-- STAR COLLAPSE MOBILE MENU -->
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                <a data-toggle="collapse" href="#about" aria-expanded="false">Pages</a>
+                            </div>
+                            <div class="collapse" id="about">
+                                <div class="card card-block">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                                    <a class="dropdown-item" href="faq.html">Faq</a>
+                                    <a class="dropdown-item" href="pricing-table.html">Pricing</a>
+                                    <a class="dropdown-item" href="payment-method.html">Payment Method</a>
+                                    <a class="dropdown-item" href="thank-you.html">Thank You</a>
+                                    <a class="dropdown-item" href="404.html">404</a>
+                                    <a class="dropdown-item" href="login.html">Login</a>
+                                    <a class="dropdown-item" href="register.html">Register</a>
+                                    <a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+                                    <a class="dropdown-item" href="under-construction.html">Under Construction</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END COLLAPSE MOBILE MENU -->
+                        <li class="dropdown hidden-md-down">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Pages</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="about.html">About Us</a>
+                                <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                                <a class="dropdown-item" href="faq.html">Faq</a>
+                                <a class="dropdown-item" href="pricing-table.html">Pricing</a>
+                                <a class="dropdown-item" href="payment-method.html">Payment Method</a>
+                                <a class="dropdown-item" href="thank-you.html">Thank You</a>
+                                <a class="dropdown-item" href="404.html">404</a>
+                                <a class="dropdown-item" href="login.html">Login</a>
+                                <a class="dropdown-item" href="register.html">Register</a>
+                                <a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+                                <a class="dropdown-item" href="under-construction.html">Under Construction</a>
+                            </div>
+                        </li>
+                        <!-- STAR COLLAPSE MOBILE MENU -->
+                        <li class="hidden-lg-up">
+                            <div class="po">
+                                <a data-toggle="collapse" href="#blog" aria-expanded="false">Blog</a>
+                            </div>
+                            <div class="collapse" id="blog">
+                                <div class="card card-block">
+                                    <a class="dropdown-item" href="blog-grid.html">Blog Grid</a>
+                                    <a class="dropdown-item" href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
+                                    <a class="dropdown-item" href="blog-list.html">Blog List</a>
+                                    <a class="dropdown-item" href="blog-list-sidebar.html">Blog List Sidebar</a>
+                                    <a class="dropdown-item" href="blog-details.html">Blog Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END COLLAPSE MOBILE MENU -->
+                        <li class="dropdown hidden-md-down">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Blog</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="blog-grid.html">Blog Grid</a>
+                                <a class="dropdown-item" href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
+                                <a class="dropdown-item" href="blog-list.html">Blog List</a>
+                                <a class="dropdown-item" href="blog-list-sidebar.html">Blog List Sidebar</a>
+                                <a class="dropdown-item" href="blog-details.html">Blog Details</a>
+                            </div>
+                        </li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="images/listing-details/1.jpeg" class="grid image-link">
+                        <img src="images/listing-details/1.jpeg" class="img-fluid" alt="#">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/listing-details/2.jpeg" class="grid image-link">
+                        <img src="images/listing-details/2.jpeg" class="img-fluid" alt="#">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/listing-details/3.jpeg" class="grid image-link">
+                        <img src="images/listing-details/3.jpeg" class="img-fluid" alt="#">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/listing-details/4.jpg" class="grid image-link">
+                        <img src="images/listing-details/4.jpg" class="img-fluid" alt="#">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/listing-details/5.jpeg" class="grid image-link">
+                        <img src="images/listing-details/5.jpeg" class="img-fluid" alt="#">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/listing-details/6.jpeg" class="grid image-link">
+                        <img src="images/listing-details/6.jpeg" class="img-fluid" alt="#">
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-pagination swiper-pagination-white"></div>
+
+            <div class="swiper-button-next swiper-button-white mr-3"></div>
+            <div class="swiper-button-prev swiper-button-white ml-3"></div>
+        </div>
+    </div>
+    <!-- END SECTION HEADINGS -->
+
+    <!-- START SECTION LISTING DETAIL-->
+    <section class="listing blog details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 blog-pots">
+                    <!-- Block heading end -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="detail-wrapper">
+                                <div class="detail-wrapper-body">
+                                    <div class="listing-title-bar">
+                                        <h3>Luxury Restaurant <span class="mrg-l-5 category-tag">Restaurants</span></h3>
+                                        <div class="mt-3">
+                                            <a href="#listing-location" class="listing-address">
+                                                <i class="fa fa-map-marker pr-2 ti-location-pin mrg-r-5"></i> Est St, 77 - Central Park South, NYC
+                                            </a>
+                                            <div class="rating-box mt-3">
+                                                <div class="detail-list-rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <a href="#" class="detail-rating-count">16 Rating</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget_author__header">
+                                <div class="widget_author__avatar">
+                                    <img src="images/testimonials/ts-2.jpg" alt="">
+                                </div>
+                                <div class="overflow-hidden">
+                                    <h4 class="widget_author__name mt-4">Mario James</h4>
+                                    <span class="widget_author__role role--admin">
+                                    <i class="fa fa-cogs mr-2 mt-2"></i> Administrator</span>
+                                </div>
+                            </div>
+                            <div class="blog-info details overview">
+                                <h5 class="mb-4">OVERVIEW</h5>
+                                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam quod tempora a nisi esse magnam nulla quas! Error praesentium, vero dolorum laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam.</p>
+                                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam quod tempora a nisi esse magnam nulla quas! Error praesentium, vero dolorum laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam.</p>
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam quod tempora a nisi esse magnam nulla quas! Error praesentium, vero dolorum laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cars content -->
+                    <div class="homes-content details amenities">
+                        <!-- title -->
+                        <h5 class="mb-4">Amenities</h5>
+                        <!-- cars List -->
+                        <div class="ameneniti">
+                            <ul class="homes-list amen clearfix">
+                                <li>
+                                    <i class="fa fa-check-square mr-2" aria-hidden="true"></i>
+                                    <span>Elevator in building</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square mr-2" aria-hidden="true"></i>
+                                    <span>Friendly Workspace</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square mr-2" aria-hidden="true"></i>
+                                    <span>Instant Book</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square mr-2" aria-hidden="true"></i>
+                                    <span>Wireless Internet</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square mr-2" aria-hidden="true"></i>
+                                    <span>Events</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square mr-2" aria-hidden="true"></i>
+                                    <span>Smoking Allowed</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square mr-2" aria-hidden="true"></i>
+                                    <span>Free Parking</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square mr-2" aria-hidden="true"></i>
+                                    <span>Door attendant</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square mr-2" aria-hidden="true"></i>
+                                    <span>Security cameras</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="property-location mp">
+                        <h5>Location</h5>
+                        <div class="divider-fade"></div>
+                        <div id="map-contact" class="contact-map"></div>
+                    </div>
+                    <!-- START SECTION ASSIGNED AGENTS -->
+                    <section class="reviews comments">
+                        <h3 class="mb-5">5 Reviews</h3>
+                        <div class="row mb-5">
+                            <ul class="col-12 commented pl-0">
+                                <li class="comm-inf">
+                                    <div class="col-md-2">
+                                        <img src="images/testimonials/ts-5.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-10 comments-info">
+                                        <div class="conra">
+                                            <h5 class="mb-2">Mary Smith</h5>
+                                            <div class="rating-box">
+                                                <div class="detail-list-rating mr-0">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-4">May 30 2020</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam, quam congue dictum luctus, lacus magna congue ante, in finibus dui sapien eu dolor. Integer tincidunt suscipit erat, nec laoreet ipsum vestibulum sed.</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <ul class="col-12 commented pl-0">
+                                <li class="comm-inf">
+                                    <div class="col-md-2">
+                                        <img src="images/testimonials/ts-4.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-10 comments-info">
+                                        <div class="conra">
+                                            <h5 class="mb-2">Abraham Tyron</h5>
+                                            <div class="rating-box">
+                                                <div class="detail-list-rating mr-0">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-4">june 1 2020</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam, quam congue dictum luctus, lacus magna congue ante, in finibus dui sapien eu dolor. Integer tincidunt suscipit erat, nec laoreet ipsum vestibulum sed.</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="row mt-5">
+                            <ul class="col-12 commented mb-0 pl-0">
+                                <li class="comm-inf">
+                                    <div class="col-md-2">
+                                        <img src="images/testimonials/ts-3.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-10 comments-info">
+                                        <div class="conra">
+                                            <h5 class="mb-2">Lisa Williams</h5>
+                                            <div class="rating-box">
+                                                <div class="detail-list-rating mr-0">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-4">jul 12 2020</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam, quam congue dictum luctus, lacus magna congue ante, in finibus dui sapien eu dolor. Integer tincidunt suscipit erat, nec laoreet ipsum vestibulum sed.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="reviews leve-comments details">
+                        <div id="add-review" class="add-review-box">
+                            <!-- Add Review -->
+                            <h3 class="listing-desc-headline margin-bottom-20 mb-4">Add Review</h3>
+                            <span class="leave-rating-title">Your rating for this listing</span>
+                            <!-- Rating / Upload Button -->
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <!-- Leave Rating -->
+                                    <div class="clearfix"></div>
+                                    <div class="leave-rating margin-bottom-30">
+                                        <input type="radio" name="rating" id="rating-1" value="1" />
+                                        <label for="rating-1" class="fa fa-star"></label>
+                                        <input type="radio" name="rating" id="rating-2" value="2" />
+                                        <label for="rating-2" class="fa fa-star"></label>
+                                        <input type="radio" name="rating" id="rating-3" value="3" />
+                                        <label for="rating-3" class="fa fa-star"></label>
+                                        <input type="radio" name="rating" id="rating-4" value="4" />
+                                        <label for="rating-4" class="fa fa-star"></label>
+                                        <input type="radio" name="rating" id="rating-5" value="5" />
+                                        <label for="rating-5" class="fa fa-star"></label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Uplaod Photos -->
+                                    <div class="add-review-photos margin-bottom-30">
+                                        <div class="photoUpload">
+                                            <span><i class="sl sl-icon-arrow-up-circle"></i> Upload Photos</span>
+                                            <input type="file" class="upload" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 data">
+                                    <form action="#">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" placeholder="First Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" placeholder="Last Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <textarea class="form-control" id="exampleTextarea" rows="8" placeholder="Review" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-lg mt-2">Submit Review</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END SECTION ASSIGNED AGENTS -->
+                </div>
+                <aside class="col-lg-4 col-md-12 car">
+                    <div class="widget">
+                        <!-- Start: Book A Reservation -->
+                        <div class="widget-boxed mt-33">
+                            <div class="widget-boxed-header">
+                                <h4><i class="fa fa-calendar pr-3 padd-r-10"></i>Book A Reservation</h4>
+                            </div>
+                            <div class="widget-boxed-body">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 book">
+                                        <input type="text" id="reservation-date" data-lang="en" data-large-mode="true" data-min-year="2017" data-max-year="2020" data-disabled-days="08/17/2017,08/18/2017" data-id="datedropper-0" data-theme="my-style" class="form-control" readonly="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 book2">
+                                        <input type="text" id="reservation-time" class="form-control" readonly="">
+                                    </div>
+                                </div>
+                                <div class="row mrg-top-15 mb-3">
+                                    <div class="col-lg-6 col-md-12 mt-4">
+                                        <label class="mb-3">Adult</label>
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+										 <button type="button" class="btn counter-btn theme-cl btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+											 <i class="fa fa-minus"></i>
+										 </button>
+									        </span>
+                                            <input type="text" name="quant[1]" class="border-0 text-center form-control input-number" data-min="0" data-max="10" value="0">
+                                            <span class="input-group-btn">
+											 <button type="button" class="btn counter-btn theme-cl btn-number" data-type="plus" data-field="quant[1]">
+											  <i class="fa fa-plus"></i>
+											 </button>
+									        </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 mt-4">
+                                        <label class="mb-3">Children</label>
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+										 <button type="button" class="btn counter-btn theme-cl btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+											 <i class="fa fa-minus"></i>
+										 </button>
+									        </span>
+                                            <input type="text" name="quant[2]" class="border-0 text-center form-control input-number" data-min="0" data-max="10" value="0">
+                                            <span class="input-group-btn">
+											 <button type="button" class="btn counter-btn theme-cl btn-number" data-type="plus" data-field="quant[2]">
+											  <i class="fa fa-plus"></i>
+											 </button>
+									        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="payment-method.html" class="btn reservation btn-radius theme-btn full-width mrg-top-10">Book Now</a>
+                            </div>
+                        </div>
+                        <!-- End: Book A Reservation -->
+
+                        <!-- Start: Opening hour -->
+                        <div class="widget-boxed mt-5">
+                            <div class="widget-boxed-header">
+                                <h4><i class="fa fa-clock-o pr-3 padd-r-10"></i>Opening Hours</h4>
+                            </div>
+                            <div class="widget-boxed-body">
+                                <div class="side-list">
+                                    <ul>
+                                        <li class="pt-0">Monday <span>9 AM - 5 PM</span></li>
+                                        <li>Tuesday <span>9 AM - 5 PM</span></li>
+                                        <li>Wednesday <span>9 AM - 5 PM</span></li>
+                                        <li>Thursday <span>9 AM - 5 PM</span></li>
+                                        <li>Friday <span>9 AM - 5 PM</span></li>
+                                        <li>Saturday <span>9 AM - 3 PM</span></li>
+                                        <li>Sunday <span>Closed</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: Opening hour -->
+
+                        <div class="widget widget_listings my-5">
+                            <div class="widget-boxed-header">
+                                <h4><i class="fa fa-map-marker pr-3"></i>Latest Listings</h4>
+                            </div>
+                            <div class="widget-boxed-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="images/popular-listings/1.jpeg" alt=""></a>
+                                        <div class="overflow-hidden">
+                                            <span class="cat mt-0"><a href="#">Luxury Restaurant</a></span>
+                                            <h4><a href="#">New York</a></h4>
+                                            <span class="rating__star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/popular-listings/2.jpeg" alt=""></a>
+                                        <div class="overflow-hidden">
+                                            <span class="cat"><a href="#">Gym in Town</a></span>
+                                            <h4><a href="#">Toronto</a></h4>
+                                            <span class="rating__star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/popular-listings/3.jpeg" alt=""></a>
+                                        <div class="overflow-hidden">
+                                            <span class="cat"><a href="#">Elegant Cafe</a></span>
+                                            <h4><a href="#">Boston</a></h4>
+                                            <span class="rating__star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/popular-listings/4.jpg" alt=""></a>
+                                        <div class="overflow-hidden">
+                                            <span class="cat"><a href="#">Car Dealer</a></span>
+                                            <h4><a href="#">New York</a></h4>
+                                            <span class="rating__star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="recent-post tags">
+                            <div class="widget-boxed-header">
+                                <h4><i class="fas fa-tags pr-3"></i>Popular Tags</h4>
+                            </div>
+                            <div class="widget-boxed-body">
+                                <div class="tags">
+                                    <span><a href="#" class="btn btn-outline-primary mr-2">Business</a></span>
+                                    <span><a href="#" class="btn btn-outline-primary">Restaurant</a></span>
+                                </div>
+                                <div class="tags">
+                                    <span><a href="#" class="btn btn-outline-primary mr-2">Cafe</a></span>
+                                    <span><a href="#" class="btn btn-outline-primary">Hotels</a></span>
+                                </div>
+                                <div class="tags">
+                                    <span><a href="#" class="btn btn-outline-primary mr-2">Gym</a></span>
+                                    <span><a href="#" class="btn btn-outline-primary">Cinema</a></span>
+                                </div>
+                                <div class="tags">
+                                    <span><a href="#" class="btn btn-outline-primary mr-2">Real Estates</a></span>
+                                    <span><a href="#" class="btn btn-outline-primary">Store</a></span>
+                                </div>
+                                <div class="tags no-mb">
+                                    <span><a href="#" class="btn btn-outline-primary mr-2">Conference</a></span>
+                                    <span><a href="#" class="btn btn-outline-primary">Places</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION LISTING DETAIL -->
+
+    <!-- START FOOTER -->
+    <footer class="first-footer">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="netabout">
+                            <a href="index.html" class="logo">
+                                <img src="images/logo.svg" alt="netcom">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p>
+                        </div>
+                        <div class="contactus">
+                            <ul>
+                                <li>
+                                    <div class="info">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <p class="in-p">95 South Park Avenue, USA</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        <p class="in-p">+456 875 369 208</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <p class="in-p ti">support@listingo.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget quick-link clearfix">
+                            <h3 class="widget-title">Quick Links</h3>
+                            <div class="quick-links">
+                                <ul class="one-half mr-5">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="listing-details.html">Listing Details</a></li>
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li class="no-pb"><a href="blog-list.html">Blog List</a></li>
+                                </ul>
+                                <ul class="one-half">
+                                    <li><a href="blog-grid.html">Blog</a></li>
+                                    <li><a href="pricing-table.html">Pricing</a></li>
+                                    <li><a href="contact-us.html">Contact</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="faq.html">Our Faq</a></li>
+                                    <li class="no-pb"><a href="listings-full-grid.html">Listings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget">
+                            <h3>Instagram</h3>
+                            <ul class="photo">
+                                <li class="hover-effect">
+                                    <figure>
+                                        <a href="#"><img src="images/instagram/inst-1.jpeg" alt=""></a>
+                                    </figure>
+                                </li>
+                                <li class="hover-effect">
+                                    <figure>
+                                        <a href="#"><img src="images/instagram/inst-2.jpeg" alt=""></a>
+                                    </figure>
+                                </li>
+                                <li class="hover-effect">
+                                    <figure>
+                                        <a href="#"><img src="images/instagram/inst-3.jpeg" alt=""></a>
+                                    </figure>
+                                </li>
+                                <li class="hover-effect">
+                                    <figure>
+                                        <a href="#"><img src="images/instagram/inst-4.jpeg" alt=""></a>
+                                    </figure>
+                                </li>
+                                <li class="hover-effect">
+                                    <figure>
+                                        <a href="#"><img src="images/instagram/inst-5.jpg" alt=""></a>
+                                    </figure>
+                                </li>
+                                <li class="hover-effect">
+                                    <figure>
+                                        <a href="#"><img src="images/instagram/inst-6.jpeg" alt=""></a>
+                                    </figure>
+                                </li>
+                                <li class="hover-effect">
+                                    <figure>
+                                        <a href="#"><img src="images/instagram/inst-7.jpeg" alt=""></a>
+                                    </figure>
+                                </li>
+                                <li class="hover-effect">
+                                    <figure>
+                                        <a href="#"><img src="images/instagram/inst-8.jpg" alt=""></a>
+                                    </figure>
+                                </li>
+                                <li class="hover-effect">
+                                    <figure>
+                                        <a href="#"><img src="images/instagram/inst-9.jpeg" alt=""></a>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="newsletters">
+                            <h3>Newsletters</h3>
+                            <p>Sign Up for Our Newsletter to get Latest Updates and Offers. Subscribe to receive news in your inbox.</p>
+                        </div>
+                        <form class="bloq-email mailchimp form-inline" method="post">
+                            <label for="subscribeEmail" class="error"></label>
+                            <div class="email">
+                                <input type="email" id="subscribeEmail" name="EMAIL" placeholder="Enter Your Email">
+                                <input type="submit" value="Subscribe">
+                                <p class="subscription-success"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-footer">
+            <div class="container">
+                <p>Copyright. ©2020 Sigopper. </p>
+                <!-- <ul class="netsocials">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                </ul> -->
+            </div>
+        </div>
+    </footer>
+
+    <a data-scroll href="#heading" class="go-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+    <!-- END FOOTER -->
+    
+    <!--Style Switcher===========================================-->
+	<div class="color-switcher" id="choose_color"> <a href="#." class="picker_close"><i class="fa fa-cog fa-spin fa-2x" ></i></a>
+		<div class="theme-colours">
+			<p class="font-italic">Choose Colour style</p>
+			<ul>
+				<li>
+					<a href="#." class="blue" id="blue"></a>
+				</li>
+				<li>
+					<a href="#." class="pink" id="pink"></a>
+				</li>
+				<li>
+					<a href="#." class="orange" id="orange"></a>
+				</li>
+				<li>
+					<a href="#." class="purple" id="purple"></a>
+				</li>
+				<li>
+					<a href="#." class="green" id="green"></a>
+				</li>
+				<li>
+					<a href="#." class="red" id="red"></a>
+				</li>
+				<li>
+					<a href="#." class="cyan" id="cyan"></a>
+				</li>
+				<li>
+					<a href="#." class="sky-blue" id="sky-blue"></a>
+				</li>
+				<li>
+					<a href="#." class="gray" id="gray"></a>
+				</li>
+				<li>
+					<a href="#." class="brown" id="brown"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+    <!-- ARCHIVES JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/range-slider.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/ajaxchimp.min.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/timedropper.js"></script>
+    <script src="js/datedropper.js"></script>
+    <script src="js/jqueryadd-count.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/leaflet-gesture-handling.min.js"></script>
+    <script src="js/leaflet-providers.js"></script>
+    <script src="js/leaflet.markercluster.js"></script>
+    <script src="js/map-single.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/color-switcher.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+
+    <script>
+        if ($('.image-link').length) {
+            $('.image-link').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+        if ($('.image-link2').length) {
+            $('.image-link2').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+
+    </script>
+    <!-- Date Dropper Script-->
+    <script>
+        $('#reservation-date').dateDropper();
+
+    </script>
+    <!-- Time Dropper Script-->
+    <script>
+        this.$('#reservation-time').timeDropper({
+            setCurrentTime: false,
+            meridians: true,
+            primaryColor: "#e8212a",
+            borderColor: "#e8212a",
+            minutesInterval: '15'
+        });
+
+    </script>
+
+    <script src="js/inner.js"></script>
+</body>
+
+</html>
