@@ -45,7 +45,7 @@ $kd=$data['kode_tempat'];
                                     <h3><?php echo $data['nama_tempat'] ?> 
                                         <span class="mrg-l-5 category-tag"><?php echo $data['nama_kategori'] ?></span>
                                     <br>
-                                        <a href="https://wa.me/+62089693518338?text=Saya%20tertarik%20dengan%20mobil%20Anda%20yang%20dijual" target="_blank">089693518338</a>
+                                        <a href="https://wa.me/+62089693518338?text=Saya%20tertarik%20dengan%20mobil%20Anda%20yang%20dijual" target="_blank"><?php echo $data['no_hp'] ?? '-' ?></a>
                                     </h3>
                                     <div class="mt-3">
                                         <a href="#listing-location" class="listing-address">

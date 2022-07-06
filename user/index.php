@@ -27,6 +27,7 @@ if ($namae == "") {
 
     $kode = $datas['kode_tempat'];
     $nama = $datas['nama_tempat'];
+    $no_hp = $datas['no_hp'];
     $alamat = $datas['alamat_tempat'];
     $lat = $datas['lat_tempat'];
     $lng = $datas['lng_tempat'];
@@ -90,6 +91,12 @@ if ($namae == "") {
                 <div class="inline">
                     <input type="text" name="nama_tempat" value="<?php echo $nama ?>" class="form-control" required="">
                     <label>Nama Tempat</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="inline">
+                    <input type="text" name="no_hp" value="<?php echo $no_hp ?>" class="form-control" required="">
+                    <label>NO HP</label>
                 </div>
             </div>
             <div class="input-group mb-5">
@@ -422,6 +429,7 @@ if(isset($_POST["updateTempat"])) {
 
   $kode_tempat = $_POST['kode_tempat'];
   $nama_tempat = $_POST['nama_tempat'];
+  $no_hp = $_POST['no_hp'];
   $alamat_tempat = $_POST['alamat_tempat'];
   $lat_tempat = $_POST['lat_tempat'];
   $lng_tempat = $_POST['lng_tempat'];
@@ -431,7 +439,7 @@ if(isset($_POST["updateTempat"])) {
 
 
 
-  $simpanData = mysqli_query($koneksi,"UPDATE tempat SET nama_tempat='$nama_tempat', alamat_tempat='$alamat_tempat', lat_tempat='$lat_tempat', lng_tempat='$lng_tempat', des_tempat='$des_tempat', user_tempat='$user_tempat', pass_tempat='$pass_tempat' WHERE kode_tempat='$kode_tempat'");
+  $simpanData = mysqli_query($koneksi,"UPDATE tempat SET nama_tempat='$nama_tempat', no_hp='$no_hp', alamat_tempat='$alamat_tempat', lat_tempat='$lat_tempat', lng_tempat='$lng_tempat', des_tempat='$des_tempat', user_tempat='$user_tempat', pass_tempat='$pass_tempat' WHERE kode_tempat='$kode_tempat'");
 
   if ($simpanData) {
     echo "<script>alert('Sukses ...')</script>";
