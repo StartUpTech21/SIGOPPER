@@ -139,7 +139,7 @@
     </section>
 
     <!-- START SECTION ABOUT -->
-    <br><br><br><br>
+    <!-- <br><br><br><br> -->
 
     <section class="about-us" style="margin-bottom: 100px;">
         <div class="container">
@@ -169,40 +169,58 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 who-1">
+                    <div class="pftext">
+                        <p class="mt-3" style="text-align: justify;">sfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas jsfjsaj fjas j</p>
+
+                        <p style="text-align: justify;">aeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqweaeqwerqwe</p>
+                    </div>
+                </div>
+            </div>
         </div>
  
     <!-- END SECTION ABOUT -->
 
     <!-- START SECTION FAQ -->
-     <br><br><br><br>
+     <!-- <br><br><br><br> -->
    
-        <div class="container">
+   <!--      <div class="container">
         <h2 class="mb-5">PERTANYAAN YANG SERING DIAJUKAN</h2>
             <div class="row">
                 <div class="col-lg-6 col-md-12 service-info">
-                    <article class="faq"> 
+                    <article class="faq">  -->
                         <?php 
                         include'inc/koneksi.php';
-                            $sqlFAQ=mysqli_query($koneksi,"SELECT * FROM faq");
-                             while ($data = mysqli_fetch_array($sqlFAQ)){
+                            // $sqlFAQ=mysqli_query($koneksi,"SELECT * FROM faq");
+                             // while ($data = mysqli_fetch_array($sqlFAQ)){
                          ?>
-                        <div id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <h4 class="panel-heading">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tab-1"><?php echo $data['pertanyaan'] ?></a>
-                            </h4>
-                                <div id="tab-1" class="panel-collapse collapse">
-                                    <p>
-                                        <?php echo $data['jawaban'] ?>
-                                    </p>
-                                </div>
-                            </div>
+                        <!-- <div id="accordion" role="tablist" aria-multiselectable="true"> -->
+                            <!-- <div class="panel panel-default"> -->
+                                <!-- <h4 class="panel-heading"> -->
+                            <!-- <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tab-1"> -->
+                                <?php 
+                                // echo $data['pertanyaan'] 
+                                ?>
+                            <!-- </a> -->
+                            <!-- </h4> -->
+                                <!-- <div id="tab-1" class="panel-collapse collapse"> -->
+                                    <!-- <p> -->
+                                        <?php 
+                                        // echo $data['jawaban'] 
+                                        ?>
+                                    <!-- </p> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
                             
-                        </div>
-                    <?php } ?>
-                    </article>
-                </div>
-                <div class="col-lg-6 col-md-12 faq-contact">
+                        <!-- </div> -->
+                    <?php 
+                // } 
+                ?>
+                    <!-- </article> -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-6 col-md-12 faq-contact">
                     <h3>Didn't you find your answer contact us here</h3>
                     <form id="contactform" class="contact-form" name="contactform" method="post" novalidate>
                         <div id="success" class="successform">
@@ -225,9 +243,9 @@
                         </div>
                         <button type="submit" id="submit-contact" class="btn btn-primary btn-lg">Send Message</button>
                     </form>
-                </div>
-            </div>
-        </div>
+                </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
     </section>
     <!-- END SECTION FAQ -->
      
